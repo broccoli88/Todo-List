@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ToDo List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Smooch+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script defer src="js/script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="heading">
+        <h1>Todo List</h1>
+        <p>Plan Your Activities</p>
+      </div>
+    </header>
+    <main>
+      <button data-bold>Bold</button>
+      <div class="container">
+        <ul data-list class="list">
+          <li data-task class="task">
+            <input type="checkbox" />
+            <p>Make loundry</p>
+          </li>
+        </ul>
+        <div class="add-task">
+          <input data-add-task type="text" placeholder="Add task..." />
+          <button data-add-button>Add Task</button>
+          <button data-remove-button>Remove Finished</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

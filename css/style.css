@@ -1,0 +1,113 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 2rem;
+  line-height: 1.5;
+  letter-spacing: 1px;
+
+  max-width: 100vw;
+  min-height: 100vh;
+
+  font-family: "Smooch Sans", sans-serif;
+  background-color: rgb(233, 232, 232);
+}
+
+/* ##################################TODO LIST################################# */
+
+.heading {
+  width: max(50rem, 50vw);
+  padding: 2rem;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.heading p {
+  font-size: 3rem;
+}
+
+h1 {
+  margin: 0;
+
+  color: teal;
+  font-size: 10rem;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 6px;
+}
+
+.container {
+  width: max(50rem, 40vw);
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.list {
+  margin-bottom: 5rem;
+  list-style: none;
+  padding: 2rem 0.5rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px hsl(0, 0%, 0%, 0.5);
+}
+.task {
+  display: flex;
+  text-align: left;
+  align-items: center;
+  border-bottom: 1px solid hsla(0, 0%, 0%, 0.5);
+  margin: 2rem 0.5rem;
+}
+
+.task p {
+  margin-left: 1.5rem;
+}
+
+.task-finished {
+  text-decoration: line-through;
+}
+
+.add-task {
+  margin-top: 5rem 0;
+  padding: 2rem 0.5rem;
+}
+
+.add-task > input {
+  padding: 0.5em;
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: 0;
+  box-shadow: 0 0 10px hsl(0, 0%, 0%, 0.5);
+  letter-spacing: 1px;
+}
+
+.add-task > button {
+  width: 40%;
+  background-color: teal;
+  border: 0;
+  padding: 0.6em 1.5em;
+  border-radius: 10px;
+  color: white;
+  margin: 1rem 2rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.add-task > button:hover {
+  background-color: hsl(180, 100%, 35%);
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: bold;
+}
